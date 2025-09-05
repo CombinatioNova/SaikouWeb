@@ -1,0 +1,20 @@
+// 1. Base stuff
+@import
+  'base/base',
+  'base/typography';
+
+// 2. Components
+@import
+  'components/button';
+
+// 3. Layout-related sections
+@import
+  'layout/follow',  
+  'layout/footer',
+  'layout/navigation';
+
+// 4. Page-specific styles
+@import
+  'pages/home',
+  'pages/about',
+  'pages/rules';

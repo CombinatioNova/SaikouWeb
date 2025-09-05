@@ -1,0 +1,820 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  background-color: #121315 !important;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+body.fontLoaded {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* MOBILE FONT SIZES */
+h1 {
+  font-weight: bold !important;
+  color: white !important;
+  font-size: 2.4rem !important;
+}
+
+p {
+  color: white !important;
+  font-size: 1.4rem !important;
+  line-height: 26px;
+}
+
+.custom-button {
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.4rem !important;
+  outline: none;
+  border: none;
+  border-radius: 1rem !important;
+  color: #121315;
+  height: 4.7rem;
+  padding: 0 3rem 0 3rem;
+  opacity: 1;
+  transition: opacity;
+  transition-duration: 0.5s;
+}
+.custom-button a {
+  text-decoration: none !important;
+  color: #121315 !important;
+}
+
+.custom-button:hover {
+  transition: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.7;
+}
+
+.follow-section {
+  background-color: #15171c;
+  margin-top: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.follow-section h1 {
+  margin-bottom: 2rem;
+}
+.follow-section button {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 0;
+  outline: none;
+  height: 4.7rem;
+  width: 96%;
+  opacity: 1;
+  transition: opacity;
+  transition-duration: 0.5s;
+}
+.follow-section button:hover {
+  transition: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.7;
+}
+.follow-section .roblox-button {
+  background: #353a4a;
+}
+.follow-section .roblox-button img {
+  height: 3rem;
+  width: 8rem;
+}
+.follow-section .discord-button {
+  background: #7f89ff;
+}
+.follow-section .discord-button img {
+  width: 2.3rem;
+  height: 1.7rem;
+}
+.follow-section .twitter-button {
+  background: #1eb9ff;
+}
+.follow-section .twitter-button img {
+  width: 2.2rem;
+  height: 1.8rem;
+}
+.follow-section .megaphone-img {
+  height: 23.1rem;
+  width: 23.1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .follow-section {
+    margin-top: 10rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .follow-section .megaphone-img {
+    height: 27rem;
+    width: 27rem;
+  }
+  .follow-section button {
+    width: 12.9rem;
+    margin-right: 1rem;
+  }
+  .follow-section .twitter-button {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .megaphone-img {
+    height: 30rem !important;
+    width: 30rem !important;
+  }
+}
+@media (min-width: 1600px) {
+  .megaphone-img {
+    height: 34rem !important;
+    width: 34rem !important;
+  }
+}
+footer {
+  background-color: #0c0d0e;
+  padding-bottom: 6rem;
+}
+footer .footer-links {
+  padding-top: 6rem;
+}
+footer .footer-links img {
+  margin-bottom: 4rem;
+  width: 5.6rem;
+  height: 4.2rem;
+}
+footer .footer-links h2 {
+  margin-bottom: 2rem;
+}
+footer .footer-links h2 a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  opacity: 1;
+  transition: opacity;
+  transition-duration: 0.5s;
+}
+footer .footer-links h2 a:hover {
+  transition: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.6 !important;
+}
+footer .last-link {
+  margin-bottom: 0 !important;
+}
+footer hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  text-align: center;
+  background-color: white;
+  margin: 4rem auto 4rem auto;
+}
+footer .copyright-section p {
+  font-size: 1.2rem !important;
+  opacity: 0.4;
+  margin: 0;
+  line-height: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 8.5rem;
+  }
+  footer .footer-links {
+    padding-top: 8.5rem;
+  }
+  footer .footer-links img {
+    width: 3.2rem;
+    height: 2.4rem;
+  }
+  footer .footer-links .link-column:first-child {
+    margin-right: 4rem;
+  }
+  footer .footer-links .link-column:not(:first-child) {
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    margin-right: 2rem;
+  }
+  footer .footer-links .link-column:last-child {
+    margin-right: 0;
+    text-align: left;
+  }
+  footer .copyright-section {
+    text-align: left;
+  }
+  footer hr {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  footer .col {
+    padding-left: 2.5%;
+  }
+}
+@media (min-width: 1330px) {
+  footer .col {
+    padding-left: 4.5%;
+  }
+}
+nav {
+  max-width: 83.2rem !important;
+  margin: 2rem auto !important;
+}
+
+.navbar {
+  background-color: #0c0d0e;
+  padding: 0 !important;
+  border-radius: 1rem;
+  margin: 2rem 2rem 0 2rem;
+  height: 6.4rem;
+  /* HAMBURGER MENU */
+  /* LINKS */
+}
+.navbar .navbar-brand img {
+  height: 2.4rem;
+  width: 3.2rem;
+  margin-left: 3rem;
+}
+.navbar .navbar-toggler {
+  border: none !important;
+}
+.navbar .navbar-toggler .hamburger-menu {
+  margin-right: 2.2rem;
+  height: 100%;
+}
+.navbar .navbar-toggler .menu-bar {
+  display: block;
+  border-bottom: solid white;
+  border-width: 0.2rem;
+  width: 2.5rem;
+}
+.navbar .navbar-toggler .menu-bar:not(:first-child) {
+  margin-top: 0.7rem;
+}
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .nav-item:not(:nth-child(3)) {
+  margin-right: 6rem;
+}
+.navbar .nav-item:last-child {
+  margin-right: 14rem;
+}
+.navbar .nav-item a {
+  font-weight: bold;
+  font-size: 1.4rem;
+  opacity: 0.4;
+}
+.navbar .navbar-text img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.navbar .navbar-text a:first-child {
+  margin-right: 4rem;
+}
+.navbar .discord-icon {
+  color: white;
+  transition: color;
+  transition-duration: 0.4s;
+}
+.navbar .discord-icon:hover {
+  color: #5865F2 !important;
+  transition-duration: 0.4s;
+}
+.navbar .twitter-icon {
+  color: white;
+  transition: color;
+  transition-duration: 0.4s;
+}
+.navbar .twitter-icon:hover {
+  color: #1DA1F2 !important;
+  transition-duration: 0.4s;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  nav {
+    margin: 5rem auto !important;
+  }
+  .nav-item:first-child {
+    margin-left: 6rem;
+  }
+  .active {
+    position: relative;
+    opacity: 1 !important;
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    width: 83%;
+    height: 0.1rem;
+    background-color: white;
+    top: 4.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .nav-item:last-child {
+    margin-right: 27rem;
+  }
+}
+/* MOBILE NAVIGATION */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    height: 230%;
+    top: 89%;
+    background-color: #0c0d0e;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .navbar-nav {
+    margin-left: 2.3rem;
+    padding-bottom: 2rem;
+  }
+  .active {
+    opacity: 1 !important;
+  }
+  .navbar-text {
+    margin-left: 2rem !important;
+  }
+  .navbar-text a:first-child {
+    margin-right: 2rem !important;
+  }
+}
+.content-container {
+  width: 100%;
+  padding-left: 7.7%;
+  padding-right: 7.7%;
+}
+
+/* BACKGROUND IMAGE */
+.background-img {
+  background-image: linear-gradient(to bottom, rgba(18, 19, 21, 0.8), rgba(18, 19, 21, 0.84), rgba(18, 19, 21, 0.87), rgb(18, 19, 21), rgb(18, 19, 21)), url("/assets/images/hero_image.webp") !important;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* HERO SECTION */
+.hero-section {
+  color: white;
+}
+.hero-section h1 {
+  font-size: 3.6rem !important;
+  margin-top: 14rem;
+}
+.hero-section p {
+  font-size: 1.8rem !important;
+  margin: 2rem 0 6rem 0;
+}
+.hero-section .text-container {
+  padding: 0 30px 0 30px;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  margin-top: 18rem;
+}
+.about-section .trophy-img {
+  display: block;
+  margin: 0 auto;
+  width: 22.8rem;
+  height: 22.8rem;
+  margin-bottom: 4rem;
+}
+.about-section p {
+  margin: 2rem 0 4rem 0;
+}
+
+/* MILESTONES SECTION */
+.milestones-section {
+  background: #15171c;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+.milestones-section h1 {
+  padding-top: 6rem;
+  text-align: center;
+}
+.milestones-section p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.milestones-section .box h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0 !important;
+}
+.milestones-section .box p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem !important;
+  margin-bottom: 0 !important;
+}
+.milestones-section .col {
+  height: 11.6rem;
+  max-width: 15rem;
+  min-width: 15rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #1f222c;
+  border-radius: 1rem;
+}
+.milestones-section .col:nth-child(1),
+.milestones-section .col:nth-child(3) {
+  margin-right: 1.5rem;
+}
+.milestones-section .col:nth-child(3),
+.milestones-section .col:nth-child(4) {
+  margin-top: 1.5rem;
+}
+
+/* GAMES SECTION */
+.games-section {
+  margin-top: 6rem;
+  /* Unannounced Project Icon */
+}
+.games-section h1 {
+  text-align: center;
+}
+.games-section .games-subheading {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+.games-section .main-image {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.games-section .icon-container {
+  padding: auto;
+  white-space: nowrap;
+  display: flex !important;
+  justify-content: flex-start;
+}
+.games-section .icon-container h2,
+.games-section .icon-container span {
+  color: white;
+  white-space: nowrap;
+}
+.games-section .icon-container h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.games-section .icon-container span {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 28px;
+}
+.games-section .icon-container img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 0.5rem;
+  margin: 0 2rem 0 0;
+}
+.games-section .game-text p {
+  margin: 2rem 0 2rem 0;
+  text-align: left;
+  max-width: 50rem;
+}
+.games-section .game-text button {
+  margin-bottom: 4rem;
+}
+.games-section .saikou-reveal-icon {
+  background: #1f222c;
+  padding: 12px 10px 12px 10px;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 540px) {
+  .milestones-section .col {
+    max-width: 18rem;
+    min-width: 18rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  p {
+    font-size: 1.5rem !important;
+  }
+  .hero-section h1 {
+    font-size: 5rem !important;
+    margin-top: 19.8rem !important;
+  }
+  .hero-section p {
+    font-size: 2rem !important;
+  }
+  .about-section {
+    margin-top: 27.5rem !important;
+  }
+  .about-section .trophy-img {
+    width: 28rem;
+    height: 28rem;
+    margin: auto;
+  }
+  .milestones-section {
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .milestones-section h2 {
+    font-size: 3.2rem !important;
+  }
+  .milestones-section .box p {
+    font-size: 1.4rem !important;
+  }
+  .milestones-section h1 {
+    padding-top: 10rem;
+  }
+  .milestones-section .col {
+    max-width: 14.7rem;
+    min-width: 14.7rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .games-section {
+    margin-top: 10rem;
+  }
+  .games-section .first-game {
+    padding-top: 9rem;
+  }
+  .games-section .second-game {
+    padding-bottom: 4.4rem;
+  }
+}
+@media (min-width: 858px) {
+  .first-game {
+    padding-top: 7.2rem;
+  }
+  .second-game {
+    padding-bottom: 6.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .background-img {
+    height: 80vh;
+    top: -12rem;
+  }
+  .content-container {
+    padding: 0 10% 0 10%;
+  }
+  h1 {
+    font-size: 3.2rem !important;
+  }
+  p {
+    font-size: 1.6rem !important;
+  }
+  .hero-section h1 {
+    font-size: 5.4rem !important;
+  }
+  .hero-section p {
+    font-size: 2.4rem !important;
+  }
+  .about-section .trophy-img {
+    width: 31.2rem;
+    height: 31.2rem;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+  .milestones-section h2 {
+    font-size: 3.6rem !important;
+  }
+  .milestones-section .col {
+    max-width: 17.8rem;
+    min-width: 17.8rem;
+    margin-right: 2rem !important;
+    margin-top: 2rem !important;
+  }
+  .games-section .main-image {
+    margin: 0 auto !important;
+  }
+}
+@media (min-width: 1110px) {
+  .content-container {
+    padding: 0 14% 0 14%;
+  }
+}
+@media (min-width: 1600px) {
+  .background-img {
+    height: 100vh;
+    top: -16rem;
+  }
+  .content-container {
+    padding: 0 30.4rem 0 30.4rem;
+  }
+  .about-section p {
+    max-width: 36rem;
+  }
+  .milestones-section .col {
+    max-width: 19.3rem !important;
+    min-width: 19.3rem !important;
+    height: 12.6rem !important;
+  }
+  .col-custom {
+    width: 30% !important;
+  }
+}
+.custom-container {
+  padding: 0 27% 0 27%;
+}
+
+.main-about-section h1 {
+  margin-top: 10rem;
+  font-size: 5.4rem !important;
+  text-align: left;
+}
+.main-about-section .text-container p {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 2.4rem !important;
+  text-align: left;
+}
+.main-about-section .detail-text {
+  text-align: left;
+  margin-top: 4rem;
+}
+.main-about-section .detail-text .col:first-child {
+  margin-right: 5rem;
+}
+.main-about-section .img-container {
+  text-align: left;
+}
+.main-about-section .img-container img {
+  width: 83.2rem;
+  height: auto !important;
+  border-radius: 1rem;
+}
+
+/* VALUES SECTION */
+.values-section {
+  padding-bottom: 6rem;
+}
+.values-section h1 {
+  padding-top: 20rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.values-section .col {
+  max-width: 22rem;
+  min-width: 15rem;
+}
+.values-section .box {
+  height: 11.6rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #1f222c;
+  border-radius: 1rem;
+}
+.values-section .box p {
+  color: white;
+  font-weight: bold;
+  font-size: 4.5rem !important;
+  text-align: center;
+  margin: 0 !important;
+}
+.values-section .details-text h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.values-section .details-text p {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* WE MAKE SECTION */
+.wemake-section {
+  margin-top: 10rem;
+}
+.wemake-section p {
+  max-width: 36rem;
+  margin: 2rem 0 4rem 0;
+}
+.wemake-section img {
+  border-radius: 1rem;
+}
+
+@media (max-width: 1817px) {
+  .custom-container {
+    padding: 0 23% 0 23%;
+  }
+}
+@media (max-width: 1537px) {
+  .custom-container {
+    padding: 0 20% 0 20%;
+  }
+}
+@media (max-width: 1318px) {
+  .custom-container {
+    padding: 0 15% 0 15%;
+  }
+}
+@media (max-width: 1318px) {
+  .custom-container {
+    padding: 0 12% 0 12%;
+  }
+  .img-container img {
+    width: 95% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .custom-container {
+    padding: 0 10% 0 10%;
+  }
+  .main-about-section h1 {
+    font-size: 3.6rem !important;
+  }
+  .main-about-section .text-container p {
+    font-size: 1.8rem !important;
+  }
+  .img-container img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .col-text:first-child {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1920px) {
+  .img-container img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+.rules-summary {
+  margin-top: 10rem;
+}
+.rules-summary h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.rules-summary h1 {
+  margin-bottom: 2rem;
+}
+
+.content-divider {
+  margin: 7rem 0 7rem 0;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.rules-content h2 {
+  font-size: 2.1rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.rules-content p {
+  margin-bottom: 7rem;
+}
+
+.closing-content .bullet-points {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=main.css.map */

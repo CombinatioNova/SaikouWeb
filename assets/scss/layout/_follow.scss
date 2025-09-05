@@ -1,0 +1,97 @@
+.follow-section {
+	background-color: #15171c;
+	margin-top: 6rem;
+	padding-top: 6rem;
+
+	h1 {
+		margin-bottom: 2rem;
+	}
+
+	button {
+		margin-top: 2rem;
+		border-radius: 1rem;
+		border: 0;
+		outline: none;
+		height: 4.7rem;
+		width: 96%;
+		opacity: 1;
+		transition: opacity;
+		transition-duration: 0.5s;
+	}
+
+	button:hover {
+		transition: opacity;
+		transition-duration: 0.5s;
+		opacity: 0.7;
+	}
+
+	.roblox-button {
+		background: #353a4a;
+
+		img {
+			height: 3rem;
+			width: 8rem;
+		}
+	}
+
+	.discord-button {
+		background: #7f89ff;
+
+		img {
+			width: 2.3rem;
+			height: 1.7rem;
+		}
+	}
+
+	.twitter-button {
+		background: #1eb9ff;
+
+		img {
+			width: 2.2rem;
+			height: 1.8rem;
+		}
+	}
+
+	.megaphone-img {
+		height: 23.1rem;
+		width: 23.1rem;
+	}
+	padding-bottom: 6rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+    .follow-section {
+		margin-top: 10rem;
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+
+		.megaphone-img {
+			height: 27rem;
+			width: 27rem;
+		}
+
+		button {
+			width: 12.9rem;
+			margin-right: 1rem;
+		}
+
+		.twitter-button {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+    .megaphone-img {
+		height: 30rem !important;
+		width: 30rem !important;
+	}
+}
+
+@media (min-width: 1600px) { 
+    .megaphone-img {
+		height: 34rem !important;
+		width: 34rem !important;
+	}
+}

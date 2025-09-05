@@ -1,0 +1,25 @@
+.custom-button {
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.4rem !important;
+	outline: none;
+	border: none;
+	border-radius: 1rem !important;
+	color: #121315;
+	height: 4.7rem;
+	padding: 0 3rem 0 3rem;
+	opacity: 1;
+	transition: opacity;
+	transition-duration: 0.5s;
+
+	a {
+		text-decoration: none !important;
+		color: #121315 !important;
+	}
+}
+
+.custom-button:hover {
+	transition: opacity;
+	transition-duration: 0.5s;
+	opacity: 0.7;
+}
