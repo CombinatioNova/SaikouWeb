@@ -35,7 +35,7 @@ router.get('/privacy-policy', async (request: Request, response: Response) => {
 });
 
 /* TITLE: Saikou Discord Timestamp Tool
-URL: [https://saikou.dev/tools/timestamps](https://saikou.dev/tools/timestamps)
+URL: https://saikou.dev/tools/timestamps
 */
 router.get('/tools/timestamps', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('timestamp.ejs'));
