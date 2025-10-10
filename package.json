@@ -4,7 +4,6 @@
   "description": "A public website redesign for Saikou development",
   "main": "dist/app.js",
   "scripts": {
-    "build": "tsc",
     "dev": "vercel dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

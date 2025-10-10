@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"module": "commonjs",
 		"target": "es2020",
-		"rootDir": "src",
+		"rootDir": "api",
 		"outDir": "dist",
 		"lib": ["ESNext", "ESNext.Array", "ESNext.AsyncIterable", "ESNext.Intl", "ESNext.symbol", "DOM"],
 		"sourceMap": false,
@@ -17,6 +17,6 @@
 		"resolveJsonModule": true,
 		"strict": true
 	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules"]
+	"include": ["api/**/*"],
+	"exclude": ["node_modules", "src"]
 }
