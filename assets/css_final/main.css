@@ -343,7 +343,7 @@ nav {
 }
 @media (min-width: 992px) {
   .navbar .nav-item:last-child {
-    margin-right: 21rem;
+    margin-right: 18rem;
   }
 }
 /* MOBILE NAVIGATION */
