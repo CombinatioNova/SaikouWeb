@@ -34,13 +34,6 @@ router.get('/privacy-policy', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('privacy_policy.ejs'));
 });
 
-/* TITLE: Saikou Discord Timestamp Tool
-URL: https://saikou.dev/tools/timestamps
-*/
-router.get('/tools/timestamps', async (request: Request, response: Response) => {
-    response.send(await renderEjsFile('timestamp.ejs'));
-});
-
 /* 
 TITLE: Saikou Refund Policy
 URL: https://saikou.dev/refund-policy
