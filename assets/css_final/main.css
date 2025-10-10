@@ -68,7 +68,6 @@ p {
   background-color: #15171c;
   margin-top: 6rem;
   padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .follow-section h1 {
   margin-bottom: 2rem;
@@ -114,6 +113,9 @@ p {
   height: 23.1rem;
   width: 23.1rem;
 }
+.follow-section {
+  padding-bottom: 6rem;
+}
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 768px) {
@@ -148,7 +150,6 @@ p {
 }
 footer {
   background-color: #0c0d0e;
-  padding-bottom: 6rem;
 }
 footer .footer-links {
   padding-top: 6rem;
@@ -192,12 +193,12 @@ footer .copyright-section p {
   margin: 0;
   line-height: 20px;
 }
+footer {
+  padding-bottom: 6rem;
+}
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 768px) {
-  footer {
-    padding-bottom: 8.5rem;
-  }
   footer .footer-links {
     padding-top: 8.5rem;
   }
@@ -225,6 +226,9 @@ footer .copyright-section p {
     margin: 0;
     margin-bottom: 3rem;
   }
+  footer {
+    padding-bottom: 8.5rem;
+  }
   footer .col {
     padding-left: 2.5%;
   }
@@ -245,13 +249,14 @@ nav {
   border-radius: 1rem;
   margin: 2rem 2rem 0 2rem;
   height: 6.4rem;
-  /* HAMBURGER MENU */
-  /* LINKS */
 }
 .navbar .navbar-brand img {
   height: 2.4rem;
   width: 3.2rem;
   margin-left: 3rem;
+}
+.navbar {
+  /* HAMBURGER MENU */
 }
 .navbar .navbar-toggler {
   border: none !important;
@@ -275,11 +280,14 @@ nav {
   outline: none;
   box-shadow: none;
 }
-.navbar .nav-item:not(:nth-child(3)) {
+.navbar {
+  /* LINKS */
+}
+.navbar .nav-item:not(:nth-child(4)) {
   margin-right: 6rem;
 }
 .navbar .nav-item:last-child {
-  margin-right: 14rem;
+  margin-right: 8rem;
 }
 .navbar .nav-item a {
   font-weight: bold;
@@ -335,7 +343,7 @@ nav {
 }
 @media (min-width: 992px) {
   .navbar .nav-item:last-child {
-    margin-right: 27rem;
+    margin-right: 21rem;
   }
 }
 /* MOBILE NAVIGATION */
@@ -419,7 +427,6 @@ nav {
 .milestones-section {
   background: #15171c;
   margin-top: 6rem;
-  padding-bottom: 6rem;
 }
 .milestones-section h1 {
   padding-top: 6rem;
@@ -460,11 +467,13 @@ nav {
 .milestones-section .col:nth-child(4) {
   margin-top: 1.5rem;
 }
+.milestones-section {
+  padding-bottom: 6rem;
+}
 
 /* GAMES SECTION */
 .games-section {
   margin-top: 6rem;
-  /* Unannounced Project Icon */
 }
 .games-section h1 {
   text-align: center;
@@ -511,6 +520,9 @@ nav {
 .games-section .game-text button {
   margin-bottom: 4rem;
 }
+.games-section {
+  /* Unannounced Project Icon */
+}
 .games-section .saikou-reveal-icon {
   background: #1f222c;
   padding: 12px 10px 12px 10px;
@@ -549,7 +561,6 @@ nav {
   }
   .milestones-section {
     margin-top: 10rem;
-    padding-bottom: 10rem;
   }
   .milestones-section h2 {
     font-size: 3.2rem !important;
@@ -565,6 +576,9 @@ nav {
     min-width: 14.7rem;
     margin-right: 1.5rem;
     margin-top: 1.5rem;
+  }
+  .milestones-section {
+    padding-bottom: 10rem;
   }
   .games-section {
     margin-top: 10rem;
@@ -680,9 +694,6 @@ nav {
 }
 
 /* VALUES SECTION */
-.values-section {
-  padding-bottom: 6rem;
-}
 .values-section h1 {
   padding-top: 20rem;
   text-align: center;
@@ -721,6 +732,9 @@ nav {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.values-section {
+  padding-bottom: 6rem;
 }
 
 /* WE MAKE SECTION */
@@ -817,4 +831,6 @@ nav {
   font-size: 1.6rem;
   color: white;
   margin-bottom: 2rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
