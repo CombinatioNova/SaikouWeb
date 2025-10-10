@@ -283,11 +283,11 @@ nav {
 .navbar {
   /* LINKS */
 }
-.navbar .nav-item:not(:nth-child(4)) {
+.navbar .nav-item:not(:nth-child(3)) {
   margin-right: 6rem;
 }
 .navbar .nav-item:last-child {
-  margin-right: 8rem;
+  margin-right: 14rem;
 }
 .navbar .nav-item a {
   font-weight: bold;
@@ -299,7 +299,7 @@ nav {
   width: 2.4rem;
 }
 .navbar .navbar-text a:first-child {
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 .navbar .discord-icon {
   color: white;
@@ -343,7 +343,7 @@ nav {
 }
 @media (min-width: 992px) {
   .navbar .nav-item:last-child {
-    margin-right: 18rem;
+    margin-right: 27rem;
   }
 }
 /* MOBILE NAVIGATION */

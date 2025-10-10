@@ -45,12 +45,12 @@ nav {
 	}
 
 	/* LINKS */
-	.nav-item:not(:nth-child(3)) {
+	.nav-item:not(:nth-child(4)) {
 		margin-right: 6rem;
 	}
 
 	.nav-item:last-child {
-		margin-right: 14rem;
+		margin-right: 8rem;
 	}
 
 	.nav-item {
@@ -67,7 +67,7 @@ nav {
 	}
 
 	.navbar-text a:first-child {
-		margin-right: 4rem;
+		margin-right: 2rem;
 	}
 
 	.discord-icon { 
@@ -121,7 +121,7 @@ nav {
 @media (min-width: 992px) {
 	.navbar {
 		.nav-item:last-child {
-			margin-right: 27rem;
+			margin-right: 18rem;
 		}
 	}
 }
