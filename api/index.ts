@@ -1,11 +1,35 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { join } from 'path';
 import { renderFile } from 'ejs';
+import { readFileSync } from 'fs';
+import axios from 'axios';
+
+async function getRobloxPlayerCount(placeId: number): Promise<string> {
+    try {
+        // First get the universe ID from place ID
+        const universeResponse = await axios.get(`https://apis.roblox.com/universes/v1/places/${placeId}/universe`);
+        const universeId = universeResponse.data.universeId;
+
+        // Then get the playing count
+        const gameResponse = await axios.get(`https://games.roblox.com/v1/games?universeIds=${universeId}`);
+        const playing = gameResponse.data.data[0]?.playing || 0;
+
+        // Format the number nicely
+        if (playing >= 1000) {
+            return `${Math.floor(playing / 1000)}K+`;
+        }
+        return playing.toString();
+    } catch (error) {
+        console.error('Error fetching Roblox data:', error);
+        return '1K+'; // Fallback
+    }
+}
 
 function renderEjsFile(filename: string, data?: any) {
     // In Vercel, we need to go up to the project root, then into assets
     const filePath = join(process.cwd(), 'assets', 'html', filename);
-    return renderFile(filePath, data);
+    console.log('Trying to render:', filePath);
+    return renderFile(filePath, data || {});
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -14,7 +38,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
         switch (url) {
             case '/':
-                res.send(await renderEjsFile('home.ejs', { mwtPlaying: null }));
+                const playerCount = await getRobloxPlayerCount(62124643);
+                res.send(await renderEjsFile('home.ejs', { mwtPlaying: playerCount }));
                 break;
 
             case '/about':
@@ -44,7 +69,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
             case '/sitemap.txt':
                 const sitemapPath = join(process.cwd(), 'assets', 'data', 'sitemap.txt');
-                res.sendFile(sitemapPath);
+                const sitemapContent = readFileSync(sitemapPath, 'utf-8');
+                res.setHeader('Content-Type', 'text/plain');
+                res.send(sitemapContent);
                 break;
 
             default:
